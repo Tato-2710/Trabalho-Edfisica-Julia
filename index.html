@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SKYRIDE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Desenhos reutilizáveis (balão, nuvem, skate, brilho) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="balloon" viewBox="0 0 100 140">
+      <path d="M50 4C25 4 6 22 6 46c0 22 16 38 30 52h28c14-14 30-30 30-52C94 22 75 4 50 4z" fill="var(--b1,#ff7a1a)"/>
+      <path d="M50 4C38 14 32 30 32 46c0 20 8 36 14 52h8c6-16 14-32 14-52 0-16-6-32-18-42z" fill="var(--b2,#fff6e9)" opacity=".92"/>
+      <path d="M12 52h76" stroke="rgba(0,0,0,.12)" stroke-width="3" fill="none"/>
+      <path d="M36 98l6 22M64 98l-6 22" stroke="#e9efff" stroke-width="2" opacity=".8"/>
+      <rect x="40" y="118" width="20" height="14" rx="3" fill="#b5651d"/>
+      <rect x="40" y="118" width="20" height="4" rx="2" fill="#8a4a12"/>
+    </symbol>
+    <symbol id="cloud" viewBox="0 0 200 80">
+      <g fill="#fff"><circle cx="55" cy="50" r="26"/><circle cx="98" cy="34" r="32"/><circle cx="142" cy="48" r="26"/><rect x="40" y="48" width="115" height="28" rx="14"/></g>
+    </symbol>
+    <symbol id="skate" viewBox="0 0 200 64">
+      <rect x="8" y="16" width="184" height="16" rx="8" fill="var(--s1,#ff3d8b)"/>
+      <rect x="8" y="16" width="184" height="5" rx="2.5" fill="rgba(255,255,255,.35)"/>
+      <rect x="44" y="32" width="14" height="8" fill="#a9b6d9"/><rect x="142" y="32" width="14" height="8" fill="#a9b6d9"/>
+      <circle cx="51" cy="48" r="11" fill="#fff6e9"/><circle cx="149" cy="48" r="11" fill="#fff6e9"/>
+      <circle cx="51" cy="48" r="4" fill="#13204a"/><circle cx="149" cy="48" r="4" fill="#13204a"/>
+    </symbol>
+    <symbol id="spark" viewBox="0 0 100 100">
+      <path d="M50 0L61 39 100 50 61 61 50 100 39 61 0 50 39 39Z" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="nav">
+    <a href="#inicio" class="logo">SKYRIDE</a>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#parque">Conheça nosso parque</a></li>
+        <li><a href="#experiencias">Experiências</a></li>
+        <li><a href="#divertir" class="cta">Venha se divertir</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="inicio">
+  <div class="deco-layer" aria-hidden="true">
+    <svg class="deco balloon bl-a" style="--b1:#ff7a1a;--b2:#fff6e9"><use href="#balloon"/></svg>
+    <svg class="deco balloon bl-b" style="--b1:#2ec4ff;--b2:#fff6e9"><use href="#balloon"/></svg>
+    <svg class="deco balloon bl-c" style="--b1:#ff3d8b;--b2:#ffd1e3"><use href="#balloon"/></svg>
+    <svg class="deco balloon bl-d" style="--b1:#ff7a1a;--b2:#2ec4ff"><use href="#balloon"/></svg>
+    <svg class="deco cloud cl-a"><use href="#cloud"/></svg>
+    <svg class="deco cloud cl-b"><use href="#cloud"/></svg>
+    <svg class="deco cloud cl-c"><use href="#cloud"/></svg>
+    <svg class="deco skate sk-a"><use href="#skate"/></svg>
+    <svg class="deco spark sp-a"><use href="#spark"/></svg>
+    <svg class="deco spark sp-b"><use href="#spark"/></svg>
+    <svg class="deco spark sp-c"><use href="#spark"/></svg>
+  </div>
+  <div class="hero-img"><img src="WhatsApp Image 2026-10-28 at 21.32.46.jpeg" alt="Visitante com skate em um parque de diversões" onerror="this.style.display='none'"></div>
+  <div class="hero-content">
+    <span class="badge">Inauguração 14 de janeiro</span>
+    <h1>SKYRIDE</h1>
+    <p>Balões, skates e adrenalina. Um dos maiores parques da América Latina está chegando.</p>
+    <a href="#parque" class="btn">Ver atrações</a>
+    <a href="#divertir" class="btn ghost">Comprar ingresso</a>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 44C200 92 420 4 720 44S1230 84 1440 28V80H0Z" fill="#13204a"/></svg>
+</div>
+
+<!-- ================= SOBRE NÓS ================= -->
+<section id="sobre">
+  <div class="deco-layer" aria-hidden="true"><svg class="deco cloud cl-s1"><use href="#cloud"/></svg><svg class="deco spark sp-s1"><use href="#spark"/></svg><svg class="deco spark sp-s2"><use href="#spark"/></svg></div>
+  <div class="container">
+    <h2 class="section-title">Sobre <span>nós</span></h2>
+    <p class="section-sub">A história por trás do Sky Ride</p>
+    <div class="about">
+      <div>
+        <p>O parque Sky Ride tem seu planejamento desde o início do ano de 2025, desenvolvido por arquitetos especialistas, juntamente com jovens criativos e aventureiros, que buscavam um novo parque de diversão diferente de tudo que já foi criado.</p>
+        <p>Um dos maiores parques da América Latina.</p>
+        <div class="stats">
+          <div class="stat"><strong>2025</strong><span>início do planejamento</span></div>
+          <div class="stat"><strong>15</strong><span>atrações e experiências</span></div>
+          <div class="stat"><strong>+1</strong><span>show diário de skate</span></div>
+        </div>
+      </div>
+      <div class="about-img">
+        <div class="img-slot"><span>ESPAÇO PARA IMAGEM<small>O parque Sky Ride</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (16).jpeg" alt="O parque Sky Ride" onerror="this.style.display='none'"></div>
+        <span class="sticker">DESDE<b>2025</b></span>
+        <svg class="deco balloon bl-s" style="--b1:#ff3d8b;--b2:#fff6e9"><use href="#balloon"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tape t-orange" aria-hidden="true"><div class="tape-track"><div><span>BALÕES</span><i>&#10022;</i><span>SKATES</span><i>&#10022;</i><span>ADRENALINA</span><i>&#10022;</i><span>SKYRIDE</span><i>&#10022;</i><span>14 DE JANEIRO</span><i>&#10022;</i></div><div><span>BALÕES</span><i>&#10022;</i><span>SKATES</span><i>&#10022;</i><span>ADRENALINA</span><i>&#10022;</i><span>SKYRIDE</span><i>&#10022;</i><span>14 DE JANEIRO</span><i>&#10022;</i></div></div></div>
+
+<!-- ================= CONHEÇA NOSSO PARQUE (CARROSSEL) ================= -->
+<section id="parque">
+  <div class="deco-layer" aria-hidden="true"><svg class="deco balloon bl-p1" style="--b1:#2ec4ff;--b2:#fff6e9"><use href="#balloon"/></svg><svg class="deco balloon bl-p2" style="--b1:#ff7a1a;--b2:#ffd1e3"><use href="#balloon"/></svg><svg class="deco spark sp-p1"><use href="#spark"/></svg></div>
+  <div class="container">
+    <h2 class="section-title">Conheça nosso <span>parque</span></h2>
+    <p class="section-sub">Use as setas para passar pelas atrações. Radicais, para os pequenos e experiências extras.</p>
+
+    <div class="carousel-wrap">
+      <button class="arrow prev" aria-label="Anterior" id="prev">&#8249;</button>
+      <button class="arrow next" aria-label="Próxima" id="next">&#8250;</button>
+
+      <div class="carousel" id="carousel">
+
+        <!-- ===== ATRAÇÕES ===== -->
+        <article>
+          <div class="img-slot"><span><small>LoopCoaster</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (1).jpeg" alt="LoopCoaster" onerror="this.style.display='none'"></div>
+          <span class="tag radical">Radical</span>
+          <h3>LoopCoaster</h3>
+          <p>Uma montanha-russa radical onde os passageiros fazem o trajeto inteiramente de pé, simulando a postura sobre um skate. A atração começa com uma aceleração brutal direto para um loop gigante, seguido por uma sequência rápida de curvas com obstáculos temáticos no percurso, exigindo que os trilhos façam desvios dinâmicos e fechados, até culminar numa rampa final de grande altitude antes da frenagem de impacto.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Urban Drift</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (15).jpeg" alt="Urban Drift" onerror="this.style.display='none'"></div>
+          <span class="tag radical">Radical</span>
+          <h3>Urban Drift</h3>
+          <p>Uma releitura urbana dos tradicionais carrinhos bate-bate. Em vez das estruturas convencionais, os veículos têm o formato estilizado de decks de skate e contam com amortecimento reforçado e mobilidade de deslizamento 360°, permitindo que os pilotos façam manobras de drift e colisões dinâmicas numa arena temática com luzes neon e som automotivo.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Simulador Kickflip</small></span><img src="clickFlip.jpg.jpeg" alt="Simulador Kickflip" onerror="this.style.display='none'"></div>
+          <span class="tag radical">Radical</span>
+          <h3>Simulador Kickflip</h3>
+          <p>Atração imersiva de alta tecnologia que combina simulação de movimento e projeção em cúpula. Os visitantes iniciam a experiência sentindo a subida tranquila e panorâmica a bordo de um balão de ar quente; no ápice da altitude, o simulador projeta um salto no vazio sobre um skate virtual, descendo numa velocidade vertiginosa pela pista mais insana e íngreme do parque.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Balanço das Nuvens</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (5).jpeg" alt="Balanço das Nuvens" onerror="this.style.display='none'"></div>
+          <span class="tag radical">Radical</span>
+          <h3>Balanço das Nuvens</h3>
+          <p>Uma atração clássica do estilo chapéu mexicano (chair-o-planes), mas com o topo decorado como um grande balão colorido iluminado. Conforme a estrutura central eleva-se e gira, os assentos pendurados expandem-se para fora, dando aos visitantes a sensação de flutuar livremente pelo céu do parque.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Elevador de Balão</small></span><img src="./elevador de balão.jpg.jpeg" alt="Elevador de Balão" onerror="this.style.display='none'"></div>
+          <span class="tag radical">Radical</span>
+          <h3>Elevador de Balão</h3>
+          <p>Torre de subida e queda controlada projetada com uma estrutura central rodeada por gôndolas em formato de cestos de balão de ar quente. Os cestos sobem suavemente oferecendo uma vista panorâmica completa do Skyride e realizam sequências de descidas e elevações rápidas com sensação de gravidade zero.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Show de Skate</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (11).jpeg" alt="Show de Skate" onerror="this.style.display='none'"></div>
+          <span class="tag radical">Radical</span>
+          <h3>Show de Skate</h3>
+          <p>Espetáculo diário ao vivo com atletas profissionais executando manobras de alto nível (vert, street e mega rampa). O show conta com iluminação cênica, pirotecnia, trilha sonora intensa e momentos de interação com a plateia, destacando a cultura e a arte do skate.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Splashrun</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (13).jpeg" alt="Splashrun" onerror="this.style.display='none'"></div>
+          <span class="tag radical">Radical</span>
+          <h3>Splashrun</h3>
+          <p>Atração aquática em que os barcos têm o design exclusivo de um cesto de balão montado sobre rodas gigantes de skate. O percurso passa por canais de água rápidos, sobe uma rampa de grande altura e despenca numa queda íngreme, gerando uma grande onda de impacto (splash) que molha os passageiros e quem observa da ponte.</p>
+        </article>
+
+        <!-- ===== SEÇÃO CRIANÇAS ===== -->
+        <article>
+          <div class="img-slot"><span><small>Playground</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (7).jpeg" alt="Playground" onerror="this.style.display='none'"></div>
+          <span class="tag kids">Seção crianças</span>
+          <h3>Playground</h3>
+          <p>Área infantil interativa com piso emborrachado e anti-impacto, repleta de brinquedos em formato de mini balões de ar quente, escorregadores em tubo, redes de escalada, pontes suspensas e estruturas lúdicas adaptadas para crianças pequenas.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Balloncel</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (9).jpeg" alt="Balloncel" onerror="this.style.display='none'"></div>
+          <span class="tag kids">Seção crianças</span>
+          <h3>Balloncel</h3>
+          <p>Carrossel temático encantador em que, em vez dos cavalinhos tradicionais, as crianças e famílias andam dentro de réplicas detalhadas e coloridas de cestos e balões de ar quente que sobem e desçam suavemente enquanto a plataforma gira ao som de músicas infantis.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Montdrift</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (6).jpeg" alt="Montdrift" onerror="this.style.display='none'"></div>
+          <span class="tag kids">Seção crianças</span>
+          <h3>Montdrift</h3>
+          <p>Montanha-russa infantil projetada para a primeira experiência de adrenalina das crianças. Os carrinhos têm o formato de skates com assentos individuais e cintos de segurança; o percurso é suave, mas traz pequenos obstáculos cenográficos ao longo do trilho para dar a sensação de que o skate está se desviando pela pista.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Balaround</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (4).jpeg" alt="Balaround" onerror="this.style.display='none'"></div>
+          <span class="tag kids">Seção crianças</span>
+          <h3>Balaround</h3>
+          <p>Atração clássica no estilo xícara giratória, onde cada cabine é modelada como um balão de ar quente com cesto. Além do giro principal da plataforma, os passageiros podem controlar a velocidade do giro da sua própria cabine através do volante central.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Teatro de Histórias Red Bull</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (14).jpeg" alt="Teatro de Histórias Red Bull" onerror="this.style.display='none'"></div>
+          <span class="tag kids">Seção crianças</span>
+          <h3>Teatro de Histórias Red Bull</h3>
+          <p>Auditório infantil interativo que combina atores ao vivo, performances de skate adaptadas e recursos de ilusão de ótica no cenário. As peças contam histórias de aventuras radicais, ensinando sobre superação, criatividade e segurança no esporte de forma lúdica.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>SelvaRun</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (12).jpeg" alt="SelvaRun" onerror="this.style.display='none'"></div>
+          <span class="tag kids">Seção crianças</span>
+          <h3>SelvaRun</h3>
+          <p>Pista interativa onde as crianças equipam óculos leves de Realidade Aumentada (R.A.) enquanto percorrem um circuito seguro. Através dos óculos, a pista física se transforma virtualmente em uma selva densa cheia de animais animados, vegetação mágica e desafios de coleta de pontos ao longo do caminho.</p>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Balão Mágico</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (9).jpeg" alt="Balão Mágico" onerror="this.style.display='none'"></div>
+          <span class="tag kids">Seção crianças</span>
+          <h3>Balão Mágico</h3>
+          <p>Simulador de movimento voltado para a família que leva os pequenos em uma jornada fantástica: a experiência começa com um passeio calmo de balão por um reino colorido de castelos e nuvens, transicionando em seguida para uma corrida divertida de skates por caminhos mágicos.</p>
+        </article>
+
+        <!-- ===== EXTRA INGRESSO ===== -->
+        <article>
+          <div class="img-slot"><span><small>Viagem de Balão</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (16).jpeg" alt="Viagem de Balão" onerror="this.style.display='none'"></div>
+          <span class="tag extra">Extra ingresso</span>
+          <h3>Viagem de Balão</h3>
+          <p>Uma experiência exclusiva e contemplativa realizada em um balão de ar quente ancorado de grande porte. Os visitantes sobem a dezenas de metros de altura para apreciar a vista panorâmica de todo o parque Skyride e da região ao redor, garantindo momentos e fotos inesquecíveis durante o pôr do sol ou início da noite.</p>
+          <div class="price">1 pessoa: <b>R$ 150,00</b><br>2 pessoas: <b>R$ 240,00</b> (R$ 120,00 cada)</div>
+        </article>
+
+        <article>
+          <div class="img-slot"><span><small>Experiência Red Bull</small></span><img src="Experiência RedBull.jpg.jpeg" alt="Experiência Red Bull" onerror="this.style.display='none'"></div>
+          <span class="tag extra">Extra ingresso</span>
+          <h3>Experiência Red Bull</h3>
+          <p>Uma pista projetada com elementos de alta dificuldade (drops gigantes, bowls técnicos, corrimãos desafiadores) misturados com ilusões de ótica no solo e nas rampas. As ilusões visuais alteram a percepção de profundidade e distância, exigindo máxima precisão e controle de borda dos skatistas experientes.</p>
+          <div class="price">1 pessoa: <b>R$ 59,99</b><br>2 pessoas: <b>R$ 100,00</b> (R$ 50,00 cada)</div>
+        </article>
+
+      </div>
+    </div>
+    <p class="carousel-hint">&#8592; arraste ou use as setas &#8594;</p>
+  </div>
+</section>
+
+<div class="tape t-sky" aria-hidden="true"><div class="tape-track"><div><span>INAUGURAÇÃO</span><i>&#10022;</i><span>14 DE JANEIRO</span><i>&#10022;</i><span>INGRESSOS ABERTOS</span><i>&#10022;</i><span>VENHA SE DIVERTIR</span><i>&#10022;</i></div><div><span>INAUGURAÇÃO</span><i>&#10022;</i><span>14 DE JANEIRO</span><i>&#10022;</i><span>INGRESSOS ABERTOS</span><i>&#10022;</i><span>VENHA SE DIVERTIR</span><i>&#10022;</i></div></div></div>
+
+<!-- ================= EXPERIÊNCIAS ================= -->
+<section id="experiencias">
+  <div class="container">
+    <h2 class="section-title">Experiências</h2>
+    <p class="section-sub">Quem já viveu o Skyride conta como foi.</p>
+ 
+    <div class="exp-grid">
+ 
+      <article>
+        <div class="img-slot"><span>ESPAÇO PARA IMAGEM<small>Lucas Mendel</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46.jpeg" alt="Lucas Mendel" onerror="this.style.display='none'"></div>
+        <h3>Lucas Mendel <small>Universitário</small></h3>
+        <p>Ando de skate há mais de 8 anos e achei a proposta do parque surreal! O simulador Kickflip me deixou sem ar na hora da transição do balão pra rampa virtual. E ver a galera mandando manobra ao vivo no Show de Skate foi um dos pontos altos do dia. Com certeza vou voltar no fim de semana!</p>
+      </article>
+ 
+      <article>
+        <div class="img-slot"><span>ESPAÇO PARA IMAGEM<small>Camila e Sofia Rocha</small></span><img src="Camila e Sofia Rocha.jpg.jpeg" alt="Camila e Sofia Rocha" onerror="this.style.display='none'"></div>
+        <h3>Camila e Sofia Rocha <small>Mãe e Filha</small></h3>
+        <p>Trouxe a Sofia para a área Skyride Kids e ela simplesmente não queria ir embora! O Balloncel e o Playground de balões são super seguros, bem coloridos e preparados para as crianças pequenas. É raro achar um parque que consiga agradar os pequenos e os jovens ao mesmo tempo!</p>
+      </article>
+ 
+      <article>
+        <div class="img-slot"><span>ESPAÇO PARA IMAGEM<small>Gabriel Toledo</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (11).jpeg" alt="Gabriel Toledo" onerror="this.style.display='none'"></div>
+        <h3>Gabriel Toledo <small>Amante de Esportes Radicais</small></h3>
+        <p>A atração Pro-Track Challenge no espaço Red Bull é absurda! As ilusões de ótica no concreto realmente bagunçam a sua noção de profundidade nas rampas e nos bowls. Para quem já anda bem de skate, é um desafio técnico sensacional e único!</p>
+      </article>
+ 
+      <article>
+        <div class="img-slot"><span>ESPAÇO PARA IMAGEM<small>Beatriz Lima</small></span><img src="Beatriz Lima.jpg.jpeg" alt="Beatriz Lima" onerror="this.style.display='none'"></div>
+        <h3>Beatriz Lima <small>Estudante</small></h3>
+        <p>A Corrida de Skate em Realidade Aumentada foi a experiência mais divertida que já tive em um parque! Usar os óculos no meio da pista e ver o cenário mudar para uma selva virtual enquanto você disputa lugar na pista é sensacional!</p>
+      </article>
+ 
+      <article>
+        <div class="img-slot"><span>ESPAÇO PARA IMAGEM<small>Marcos e Vinícius Silva</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (4).jpeg" alt="Marcos e Vinícius Silva" onerror="this.style.display='none'"></div>
+        <h3>Marcos e Vinícius Silva <small>Pai e Filho</small></h3>
+        <p>Levei meu filho no Balaround e na Montdrift. A ideia da montanha-russa de skate onde a criança vai sentada e passa por pequenos obstáculos foi perfeita para a idade dele. Foi a primeira montanha-russa do Vinícius e ele amou!</p>
+      </article>
+ 
+      <article>
+        <div class="img-slot"><span>ESPAÇO PARA IMAGEM<small>Rodrigo Nogueira</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (10).jpeg" alt="Rodrigo Nogueira" onerror="this.style.display='none'"></div>
+        <h3>Rodrigo Nogueira <small>Fã de Atrações Aquáticas</small></h3>
+        <p>O Splashrun é imperdível! O carrinho em formato de cesto de balão com rodas gigantes de skate dá um toque super estiloso. A queda da rampa principal molha todo mundo e dá aquele frio na barriga clássico de brinquedo aquático!</p>
+      </article>
+ 
+      <article>
+        <div class="img-slot"><span>ESPAÇO PARA IMAGEM<small>Mariana Costa</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (5).jpeg" alt="Mariana Costa" onerror="this.style.display='none'"></div>
+        <h3>Mariana Costa <small>Visitante de Primeira Viagem</small></h3>
+        <p>O Elevador de Balão e o Balanço das Nuvens têm um visual lindo durante o dia. Fiquei impressionada com o cuidado na tematização e o acabamento de cada atração. É um parque vibrante, cheio de energia e muito fotogênico!</p>
+      </article>
+ 
+      <article>
+        <div class="img-slot"><span>ESPAÇO PARA IMAGEM<small>Roberto e Helena Xavier</small></span><img src="WhatsApp Image 2026-10-28 at 21.32.46 (8).jpeg" alt="Roberto e Helena Xavier" onerror="this.style.display='none'"></div>
+        <h3>Roberto e Helena Xavier <small>Passeio VIP</small></h3>
+        <p>Compramos o ingresso extra para o Voo de Balão Real ao fim da tarde e valeu cada centavo. Ver todo o Skyride iluminado lá de cima durante o pôr do sol foi uma experiência inesquecível e muito relaxante para fechar o dia!</p>
+      </article>
+ 
+    </div>
+  </div>
+</section>
+
+<!-- ================= VENHA SE DIVERTIR ================= -->
+<section id="divertir">
+  <div class="deco-layer" aria-hidden="true"><svg class="deco cloud cl-d1"><use href="#cloud"/></svg><svg class="deco skate sk-d"><use href="#skate"/></svg><svg class="deco spark sp-d1"><use href="#spark"/></svg></div>
+  <div class="container">
+    <h2 class="section-title">Venha se <span>divertir</span></h2>
+    <p class="section-sub">Cadastre-se para receber novidades e escolha a data do seu ingresso.</p>
+
+    <div class="fun">
+
+      <div class="card">
+        <h3>Cadastre-se</h3>
+        <p>Receba novidades sobre o parque em primeira mão.</p>
+        <form id="signup">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" required placeholder="Seu nome">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required placeholder="voce@email.com">
+          <label for="tel">Telefone</label>
+          <input type="tel" id="tel" placeholder="(00) 00000-0000">
+          <button type="submit" class="btn">Cadastrar</button>
+          <div class="success" id="success">&#10003; Cadastro realizado!</div>
+        </form>
+      </div>
+
+      <aside class="card calendar">
+        <h3>Ingressos</h3>
+        <p>Escolha uma data disponível.</p>
+        <div class="month"><strong id="monthLabel"></strong></div>
+        <div class="weekdays">
+          <span>DOM</span><span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span><span>SÁB</span>
+        </div>
+        <div class="days" id="days"></div>
+        <div class="legend">
+          <span><i style="background:var(--orange)"></i>Semana de inauguração (14/01)</span>
+          <span><i style="background:rgba(46,196,255,.4)"></i>Disponível</span>
+          <span><i style="background:rgba(255,255,255,.15)"></i>Indisponível</span>
+        </div>
+        <div class="ticket-box" id="ticketBox">
+          <div class="data" id="ticketDate">Selecione uma data no calendário</div>
+          <div class="valor" id="ticketPrice">&mdash;</div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <svg class="wave top" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C240 -10 480 90 720 40S1200 0 1440 44V0H0Z" fill="#13204a"/></svg>
+  <div class="deco-layer" aria-hidden="true">
+    <svg class="deco cloud cl-f1"><use href="#cloud"/></svg><svg class="deco cloud cl-f2"><use href="#cloud"/></svg><svg class="deco balloon bl-f" style="--b1:#ff7a1a;--b2:#fff6e9"><use href="#balloon"/></svg>
+  </div>
+  <div class="logo">SKYRIDE</div>
+  <p>Inauguração em 14 de janeiro. Balões, skates e adrenalina.</p>
+  <p class="foot-links"><a href="index.html#sobre">Sobre nós</a><a href="index.html#parque">Conheça nosso parque</a><a href="experiencias.html">Experiências</a><a href="index.html#divertir">Venha se divertir</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
